@@ -2,7 +2,7 @@ Name:		FreeIconsProject
 Summary:	Very nice 3D icons
 Summary(pl):	Bardzo ³adne ikonki 3D
 Version:	0.5
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Amusements
 #Source0:	http://www.kde-look.org/content/files/1822-FreeIcons_%{version}.tar.gz
@@ -38,4 +38,4 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 #%doc AUTHORS TODO VERSION
-%{_pixmapsdir}/*/*
+%{_pixmapsdir}/48x48
