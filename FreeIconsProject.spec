@@ -30,12 +30,10 @@ install 48x48/devices/* $RPM_BUILD_ROOT%{_pixmapsdir}/48x48/devices
 install 48x48/filesystems/* $RPM_BUILD_ROOT%{_pixmapsdir}/48x48/filesystems
 install 48x48/mimetypes/* $RPM_BUILD_ROOT%{_pixmapsdir}/48x48/mimetypes
 
-#gzip -9nf AUTHORS TODO VERSION
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-#%doc *.gz
+#%doc AUTHORS TODO VERSION
 %{_pixmapsdir}/*/*
