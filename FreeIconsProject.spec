@@ -1,11 +1,11 @@
 Name:		FreeIconsProject
 Summary:	Very nice 3D icons
 Summary(pl):	Bardzo ³adne ikonki 3D
-Version:	0.2
+Version:	0.5
 Release:	1
 License:	GPL
 Group:		X11/Amusements
-Source0:	http://gfx.context.pl/ikons/%{name}_%{version}.tar.bz2
+Source0:	http://www.kde-look.org/content/files/1822-FreeIcons_%{version}.tar.gz
 URL:		http://gfx.context.pl/
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -17,24 +17,25 @@ Very nice 3D icons.
 Bardzo ³adne ikonki 3D zrobione przez Polaka.
 
 %prep
-%setup -n %{name}_%{version} -q
+%setup -n FreeIcons_%{version} -q
 
 %build
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_pixmapsdir}/{apps,devices,filesystem,symbols}
+install -d $RPM_BUILD_ROOT%{_pixmapsdir}/48x48/{apps,devices,filesystems,mimetypes}
+#install -d $RPM_BUILD_ROOT%{_pixmapsdir}/{apps,devices,filesystem,symbols}
 
-install apps/* $RPM_BUILD_ROOT%{_pixmapsdir}/apps
-install devices/* $RPM_BUILD_ROOT%{_pixmapsdir}/devices
-install filesystem/* $RPM_BUILD_ROOT%{_pixmapsdir}/filesystem
-install symbols/* $RPM_BUILD_ROOT%{_pixmapsdir}/symbols
+install 48x48/apps/* $RPM_BUILD_ROOT%{_pixmapsdir}/48x48/apps
+install 48x48/devices/* $RPM_BUILD_ROOT%{_pixmapsdir}/48x48/devices
+install 48x48/filesystems/* $RPM_BUILD_ROOT%{_pixmapsdir}/48x48/filesystems
+install 48x48/mimetypes/* $RPM_BUILD_ROOT%{_pixmapsdir}/48x48/mimetypes
 
-gzip -9nf AUTHORS TODO VERSION
+#gzip -9nf AUTHORS TODO VERSION
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
-%{_pixmapsdir}/*
+#%doc *.gz
+%{_pixmapsdir}/*/*
