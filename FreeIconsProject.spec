@@ -5,8 +5,9 @@ Version:	0.5
 Release:	1
 License:	GPL
 Group:		X11/Amusements
+# can be get from http://www.kde-look.org/content/download.php?content=1822
 Source0:	http://www.kde-look.org/content/files/1822-FreeIcons_%{version}.tar.gz
-URL:		http://gfx.context.pl/
+URL:		http://carrion.elysium.pl/
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
