@@ -5,8 +5,8 @@ Version:	0.2
 Release:	1
 License:	GPL
 Group:		X11/Amusements
-Source0:	http://gfx.contex.pl/ikons/%{name}_%{version}.tar.bz2
-URL:		http://gfx.contex.pl/
+Source0:	http://gfx.context.pl/ikons/%{name}_%{version}.tar.bz2
+URL:		http://gfx.context.pl/
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
