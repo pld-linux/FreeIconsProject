@@ -2,11 +2,11 @@ Name:		FreeIconsProject
 Summary:	Very nice 3D icons
 Summary(pl):	Bardzo ³adne ikonki 3D
 Version:	0.5
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Amusements
-# can be get from http://www.kde-look.org/content/download.php?content=1822
-Source0:	http://www.kde-look.org/content/files/1822-FreeIcons_%{version}.tar.gz
+#Source0:	http://www.kde-look.org/content/files/1822-FreeIcons_%{version}.tar.gz
+Source0:	http://carrion.elysium.pl/download/FreeIcons_%{version}.tar.gz
 # Source0-md5:	22eaaba11ff2a90e41c45eaffee867c9
 URL:		http://carrion.elysium.pl/
 BuildArch:	noarch
