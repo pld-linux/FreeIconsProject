@@ -1,3 +1,4 @@
+# TODO: icon themes should go to %{_iconsdir}/theme/size/... instead of %{_pixmapsdir}/size/...
 Summary:	Very nice 3D icons
 Summary(pl):	Bardzo ³adne ikonki 3D
 Name:		FreeIconsProject
@@ -9,8 +10,7 @@ Group:		X11/Amusements
 Source0:	http://carrion.elysium.pl/download/FreeIcons_%{version}.tar.gz
 # Source0-md5:	22eaaba11ff2a90e41c45eaffee867c9
 URL:		http://carrion.elysium.pl/
-# for _pixmapsdir
-Requires:	X11-libs
+Requires:	%{_pixmapsdir}
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -23,11 +23,9 @@ Bardzo ³adne ikonki 3D zrobione przez Polaka.
 %prep
 %setup -n FreeIcons_%{version} -q
 
-%build
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_pixmapsdir}/48x48/{apps,devices,filesystems,mimetypes}
-#install -d $RPM_BUILD_ROOT%{_pixmapsdir}/{apps,devices,filesystem,symbols}
 
 install 48x48/apps/* $RPM_BUILD_ROOT%{_pixmapsdir}/48x48/apps
 install 48x48/devices/* $RPM_BUILD_ROOT%{_pixmapsdir}/48x48/devices
