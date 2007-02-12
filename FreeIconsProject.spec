@@ -1,6 +1,6 @@
 # TODO: icon themes should go to %{_iconsdir}/theme/size/... instead of %{_pixmapsdir}/size/...
 Summary:	Very nice 3D icons
-Summary(pl):	Bardzo ³adne ikonki 3D
+Summary(pl.UTF-8):   Bardzo Å‚adne ikonki 3D
 Name:		FreeIconsProject
 Version:	0.5
 Release:	4
@@ -17,8 +17,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Very nice 3D icons.
 
-%description -l pl
-Bardzo ³adne ikonki 3D zrobione przez Polaka.
+%description -l pl.UTF-8
+Bardzo Å‚adne ikonki 3D zrobione przez Polaka.
 
 %prep
 %setup -n FreeIcons_%{version} -q
