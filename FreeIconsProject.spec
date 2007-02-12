@@ -1,6 +1,6 @@
 # TODO: icon themes should go to %{_iconsdir}/theme/size/... instead of %{_pixmapsdir}/size/...
 Summary:	Very nice 3D icons
-Summary(pl.UTF-8):   Bardzo ładne ikonki 3D
+Summary(pl.UTF-8):	Bardzo ładne ikonki 3D
 Name:		FreeIconsProject
 Version:	0.5
 Release:	4
