@@ -3,7 +3,7 @@ Summary:	Very nice 3D icons
 Summary(pl.UTF-8):	Bardzo ładne ikonki 3D
 Name:		FreeIconsProject
 Version:	0.5
-Release:	4
+Release:	5
 License:	GPL
 Group:		X11/Amusements
 #Source0:	http://www.kde-look.org/content/files/1822-FreeIcons_%{version}.tar.gz
